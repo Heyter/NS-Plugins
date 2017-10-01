@@ -1,2 +1,2 @@
 # NS-Plugins
-<b>https://steamcommunity.com/id/chachijuarez</b>
+# https://steamcommunity.com/id/chachijuarez
