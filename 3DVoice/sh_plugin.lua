@@ -10,7 +10,7 @@ nut.util.include("cl_debug.lua")
 nut.util.include("sh_propwhitelists.lua")
 
 nut.config.add("3DVoiceEnabled", true, "Enable 3D Voice System?", nil, {category = "3DVoice"})
-nut.config.add("3DVoiceRadius", 300, "Maximum Distance a player can be heard from.", nil, {data = {min = 50, max = 500}, category = "3DVoice"})
+nut.config.add("3DVoiceRadius", 325, "Maximum Distance a player can be heard from.", nil, {data = {min = 50, max = 500}, category = "3DVoice"})
 nut.config.add("3DVoiceRefreshRate", 2, "Amount of seconds between checks to if the players voice should be heard. > 3 or 4 may be too much, < 2 can cause lag.", nil, {form = "Float",data = {min = 0.5, max = 10}, category = "3DVoice"})
 nut.config.add("3DVoiceDebugMode", false, "Enable 3D Voice System Debug", nil, {category = "3DVoice"})
 
