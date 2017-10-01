@@ -16,14 +16,11 @@ hook.Add("PostDrawOpaqueRenderables","3dvoicedebug",function()
 		
 			if (v != LocalPlayer()) then
 		
-				cam.Start3D2D( v:GetPos()+Vector(0,0,1), Angle(0,0,0), 1 )
-					
-					draw.RoundedBox( radius/2, -radius/2, -radius/2, radius, radius, Color(255,255,255,100))
-					draw.RoundedBox( radius/2, -radius/2+8, -radius/2+8, radius-16, radius-16, Color(100,0,0,255))
-					 
-					draw.RoundedBox( 0, 0, -1, radius/2, 2, Color(255,255,255,220))
-					 
-					 draw.SimpleText( "Radius: " .. radius/2,"3dvoicedebug",0,8,Color( 255, 255, 255, 220 ), 1)
+				cam.Start3D2D( v:GetPos()+Vector(0,0,2), Angle(0,0,0), 1 )
+				
+					draw.RoundedBox( radius/2, -radius/2, -radius/2, radius, radius, Color(0,255,0,5)) 
+					draw.RoundedBox( 0, 0, -1, radius/2, 2, Color(0,255,0,255))
+					draw.SimpleText( "Radius: " .. radius/2,"3dvoicedebug",0,8,Color( 0, 255, 0, 220 ), 1)
 					 
 				cam.End3D2D()
 
